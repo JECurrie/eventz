@@ -1,24 +1,4 @@
-# README
+eventz
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The app lets folks register for the events.  Stores everything in the database and list all the events on the front page.
+Each event will have its own detail page with additional information.
