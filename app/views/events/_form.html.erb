@@ -1,5 +1,4 @@
-<%= form_with(model: @event, local: true) do |f| %>
-
+<%= form_with(model: event, local: true) do |f| %>
   <%= render "shared/errors", object: event %>
 
   <%= f.label :name %>
@@ -9,7 +8,7 @@
   <%= f.text_area :description, rows: 5 %>
 
   <%= f.label :location %>
-  <%= f.text_field :location %> 
+  <%= f.text_field :location %>
 
   <%= f.label :price %>
   <%= f.number_field :price %>
@@ -22,6 +21,10 @@
 
   <%= f.label :image_file_name %>
   <%= f.text_field :image_file_name %>
+
+  <div class="checkboxes">
+    <%= f.collection_check_boxes(:category_ids, Category.all, :id, :name) %>
+  </div>
 
   <%= f.submit %>
 <% end %>
